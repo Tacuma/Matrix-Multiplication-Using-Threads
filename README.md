@@ -2,7 +2,7 @@
 
 
 #Data Structures/Concepts Used:
-Object Oriented Programming, Arrays, Threads
+Object Oriented Programming, Arrays, Threads.
 
 
 #Description:
