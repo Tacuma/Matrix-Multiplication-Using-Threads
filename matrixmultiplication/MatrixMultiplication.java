@@ -16,7 +16,7 @@ public class MatrixMultiplication {
     public static int [][] A = {{1,4}, {2,5}, {3,6}}; //Initializes A
     public static int [][] B = {{8,7,6}, {5,4,3}};    //Initializes B
     public static int [][] C = new int [M][N];
-    public static WorkerThread [][] Threads = new WorkerThread [3][3];
+    public static WorkerThread [][] Threads = new WorkerThread[3][3];
     
     
     public static void main(String[] args) {      
@@ -24,11 +24,12 @@ public class MatrixMultiplication {
         for (int i = 0; i<M; i++){
             for (int j=0; j<N; j++){
                 Threads[i][j] = new WorkerThread(i,j,A,B,C);
-                Threads[i][j].run();
+                Threads[i][j].start();
             }
         }
         
         //Outputs the Values of Matrix C
+        System.out.println("Elements of Matrix C:");
         for (int i = 0; i<M; i++){
             for (int j=0; j<N; j++){
                 System.out.println("["+i+","+j+"] = "+C[i][j]);

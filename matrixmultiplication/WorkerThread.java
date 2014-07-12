@@ -8,7 +8,7 @@ package matrixmultiplication;
  *
  * @author TaKuma
  */
-public class WorkerThread implements Runnable{
+public class WorkerThread extends Thread{
     private int row;
     private int col;
     private int [][] A;
