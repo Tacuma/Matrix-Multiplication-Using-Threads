@@ -1,11 +1,11 @@
-#Matrix Multiplication Using Threads
+# Matrix Multiplication Using Threads
 
 
-#Data Structures/Concepts Used:
+# Data Structures/Concepts Used:
 Object Oriented Programming, Arrays, Threads.
 
 
-#Description:
+# Description:
 Given two matrices, A and B, where matrix A contains M rows and K columns and matrix B contains K rows and N columns, the matrix product of A and B for matrix C,
 where C contains M rows and N columns. This program calculates each element C in a separate worker thread.
 
@@ -21,7 +21,7 @@ WorkerThread class:
                 This class is the representation of a worker thread. It contains values for its identifying column and row, and the values of Matrices A and B. The thread, using its run method, then calculates its individual value for C, each thread corresponding with a single piece of the C matrix.
 
 
-#Output:
+# Output:
 	Elements of Matrix C:
 	[0,0] = 28
 	[0,1] = 23
